@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1">
+        <title> Anatomy of Type </title>
+        <link href="a-anatomy.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav>
+
+              <ul>
+                  <li> <a href="Dailies-Website.html"> Home </a> </li>
+                  <li> <a href="about.html"> What the hell? </a> </li>
+                <li> <a href="https://www.behance.net/ninaroos"> Who made that shit? </a> </li>
+                </ul>
+            <button class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            </nav>
+
+        </header>
+
+<div class="imageMap" aria-haspopup="true">
+    <img src="a-anatomy.png" alt="" />
+    <div class="hotspots">
+        <div title="click to read info about nose"><a href="https://en.wikipedia.org/wiki/Nose" class="p1" rel="nofollow" aria-haspopup="false"></a><p><strong>Nose</strong></p><b class="b1"></b></div>
+        <div title="click to read info about larinx"><a href="https://en.wikipedia.org/wiki/Terminal_sulcus_of_tongue" class="p2" rel="nofollow" aria-haspopup="false"></a><p><strong>Larinx</strong></p><b class="b2"></b></div>
+        <div title="click to read info about teeth"><a href="https://en.wikipedia.org/wiki/Tooth" class="p3" rel="nofollow" aria-haspopup="false"></a><p><strong>Teeth</strong></p><b class="b3"></b></div>
+        <div title="click to read info about tongue"><a href="https://en.wikipedia.org/wiki/Tongue" class="p4" rel="nofollow" aria-haspopup="false"></a><p><strong>Tongue</strong></p><b class="b4"></b></div>
+        <div title="click to read info about tongue"><a href="https://en.wikipedia.org/wiki/Gingiva" class="p5" rel="nofollow" aria-haspopup="false"></a><p><strong>Gingiva</strong></p><b class="b5"></b></div>
+        <div title="click to read info about trachea"><a href="https://en.wikipedia.org/wiki/Trachea" class="p6" rel="nofollow" aria-haspopup="false"></a><p><strong>Trachea</strong></p><b class="b6"></b></div>
+    </div>
+</div>
+
+            <footer> &copy; Nina Roos 2015</footer>
+
+</body>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('button.toggle').click (function() {
+                $('header nav ul').slideToggle();
+            });
+        });
+
+        $(window).resize(function() {
+            ww = $(window).width();
+            if (ww > 800) {
+                $('header ul').show();
+            }else{
+                $('header ul').hide();
+                };
+            });
+
+    </script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1">
+        <title> Anatomy of Type </title>
+        <link href="about.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav>
+
+              <ul>
+                  <li> <a href="Dailies-Website.html"> Home </a> </li>
+                  <li> <a href="about.html"> What the hell? </a> </li>
+                <li> <a href="https://www.behance.net/ninaroos"> Who made that shit? </a> </li>
+                </ul>
+            <button class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            </nav>
+
+        </header>
+
+        <div class="wrapper">
+
+        <div class="text-container mlrauto">
+
+        <article>
+        <h1> Dailies Project</h1>
+            <p>One of a series of quick-paced exercises designed to spur design thinking through a daily creative act situated within an articulated conceptual framework.</p>
+        </article>
+
+        </div>
+        </div>
+
+            <footer> &copy; Nina Roos 2015</footer>
+</body>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('button.toggle').click (function() {
+                $('header nav ul').slideToggle();
+            });
+        });
+
+        $(window).resize(function() {
+            ww = $(window).width();
+            if (ww > 800) {
+                $('header ul').show();
+            }else{
+                $('header ul').hide();
+                };
+            });
+
+    </script>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1">
+        <title> Anatomy of Type </title>
+        <link href="Dailies-Website.css" rel="stylesheet" type="text/css"/>
+        <link href="Dailies_Mobile_Menu.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav>
+
+              <ul>
+                  <li> <a href="Dailies-Website.html"> Home </a> </li>
+                  <li> <a href="about.html"> What the hell? </a> </li>
+                <li> <a href="https://www.behance.net/ninaroos"> Who made that shit? </a> </li>
+              </ul>
+
+            <!-- This html makes us a little button to show and hide -->
+
+            <button class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            </nav>
+        </header>
+
+        <div class="container image-grid">
+
+            <div class="group">
+
+                <div class="one columns">
+                    <div class="roll-over letter-a"><a href="a-anatomy.html"><img src="a.png"></a></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="roll-over letter-n"><a href="a-anatomy.html"><img src="n.png"></a></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="roll-over letter-a2"><a href="a-anatomy.html"><img src="a2.png"></a></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="roll-over letter-t2"><a href="a-anatomy.html"><img src="t2.png"></a></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="roll-over letter-o"><a href="a-anatomy.html"><img src="o.png"></a></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="roll-over letter-m"><a href="a-anatomy.html"><img src="m.png"></a></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="roll-over letter-y"><a href="a-anatomy.html"><img src="y.png"></a></div>
+                </div>
+
+            </div>
+
+            <div class="group">
+                <div class="one columns">
+                    <div class="hide"><img src="pink-square.png"></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="hide"><img src="purple-square.png"></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="hide"><img src="blue-square.png"></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="hide"><img src="yellow-square.png"></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="roll-over letter-o2"><a href="a-anatomy.html"><img src="o2.png"></a></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="roll-over letter-f"><a href="a-anatomy.html"><img src="f.png"></a></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="hide"><img src="blue-square.png"></div>
+                </div>
+
+            </div>
+
+            <div class="group">
+
+                <div class="one columns">
+                    <div class="hide"><img src="yellow-square.png"></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="hide"><img src="pink-square.png"></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="hide"><img src="purple-square.png"></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="roll-over letter-t"><a href="a-anatomy.html"><img src="t.png"></a></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="roll-over letter-y"><a href="a-anatomy.html"><img src="y.png"></a></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="roll-over letter-p"><a href="a-anatomy.html"><img src="p.png"></a></div>
+                </div>
+
+                <div class="one columns">
+                    <div class="roll-over letter-e"><a href="a-anatomy.html"><img src="e.png"></a></div>
+                </div>
+
+            </div>
+
+        </div>
+
+            <footer> &copy; Nina Roos 2015</footer>
+
+    </body>
+
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('button.toggle').click (function() {
+                $('header nav ul').slideToggle();
+            });
+        });
+
+        $(window).resize(function() {
+            ww = $(window).width();
+            if (ww > 800) {
+                $('header ul').show();
+            }else{
+                $('header ul').hide();
+                };
+            });
+
+    </script>
+
+</html>

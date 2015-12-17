@@ -1,0 +1,213 @@
+a:link, a:visited {
+    text-decoration: none;
+    cursor: auto;
+}
+
+header button.toggle{
+    z-index: 9999999;
+    position: fixed;
+    top:1em;
+    left: 1em;
+    background: #6FC7B6;
+    height: 4em;
+    width: 4em;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.25);
+    outline: 0;
+}
+
+header button.toggle:active{
+    box-shadow: 0 0 50px 0 rgba(0,0,0,.5);
+    background: #6FC7B6;
+}
+
+header button.toggle:focus{
+    outline: 0;
+}
+
+.toggle span{
+    display: block;
+    height: 4px;
+    background-color: #6557A3;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .25em;
+    margin-bottom: .25em;
+    border-radius: .25em;
+}
+
+header {
+    z-index: 9999999;
+    position: fixed;
+    width: 100%;
+    background: #6FC7B6;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    padding: 2em;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    padding: 1em;
+    transition: all 50ms;
+    text-color: #FFFCDF;
+}
+
+nav ul li a:hover{
+    padding: 34px 48px;
+    background-color: #FFFCDF;
+}
+
+footer {
+    margin-top: 48px;
+    margin-left: 48px;
+    color: #6557A3;
+}
+
+@media (min-width:50em) {
+    body{padding-top: 64px;}
+
+    header{
+        background:#6FC7B6;
+        position: fixed;
+        width: 100%;
+        top:0px;
+        right: 0px;
+        left: 0px;
+        z-index: 9999999;
+        height: 64px;
+        box-shadow:  0 0 10px 0 rgba(0,0,0,.5);
+    }
+    nav ul {
+        list-style: none;
+        text-align: left;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 12px;
+        text-transform: uppercase;
+    }
+
+    nav ul li a {
+        padding: 12px 48px;
+        text-color: #6557A3;
+    }
+
+    header button.toggle{
+        display: none;
+    }
+}
+
+body {
+    background-color: #FFFCDF;
+    font-family: 'PT Mono', monaco, monospace;
+    font-weight: 100;
+    font-size: 14px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+}
+
+/*-----------> Image map styles<---------- */
+
+.imageMap {
+    width:100%;
+    position:relative;
+    margin:auto;
+}
+
+.imageMap img {
+    display:block;
+    width:100%;
+}
+.imageMap .hotspots {
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    visibility:hidden;
+}
+
+.imageMap a {
+    display:block;
+    position:absolute;
+    background:#000;
+    z-index:100;
+    opacity:0;
+    filter: alpha(opacity=20);
+    border:1px solid transparent;
+    border-radius:10px;
+}
+
+.imageMap a.p1 {left:50%; top:25%; width:6%; height:10%;}
+.imageMap a.p2 {left:50%; top:38%; width:5%; height:5%;}
+.imageMap a.p3 {left:55%; top:40%; width:6%; height:5%;}
+.imageMap a.p4 {left:50%; top:44%; width:10%; height:5%;}
+.imageMap a.p5 {left:50%; top:48%; width:10%; height:5%;}
+.imageMap a.p6 {left:52%; top:52%; width:6%; height:16%;}
+.imageMap a + p {position:absolute; left:0%; top:102%; width:100%; color:#000; display:none;}
+
+.imageMap:hover .hotspots {
+    visibility:visible;
+}
+
+.imageMap p strong {
+    display:block;
+    padding:0;
+    text-align: center;
+    color:#6FC7B6;
+    z-index: 999999;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+#info .imageMap p {
+    padding:0;
+    margin:0;
+    color:#6FC7B6;
+}
+
+/*
+
+.imageMap b {
+    display:block;
+    position:absolute;
+    background:url(trans.gif);
+    z-index:200;
+    opacity:0;
+    filter: alpha(opacity=20);
+    padding:1px;
+-webkit-transition:0.75s;
+-moz-transition:0.75s;
+-o-transition:0.75s;
+transition:0.75s;
+}
+.imageMap b.b1 {left:11%; top:5%; width:25%; height:34%;}
+.imageMap b.b2 {left:76%; top:13%; width:21%; height:30%;}
+.imageMap b.b3 {left:5%; top:44%; width:22%; height:42%;}
+.imageMap b.b4 {left:28%; top:41%; width:26.5%; height:43%;}
+.imageMap b.b5 {left:55%; top:64%; width:15%; height:26%;}
+.imageMap b.b6 {left:72%; top:53%; width:25%; height:35%;}
+
+*/
+
+.imageMap .hotspots div:hover b {width:0; padding:0;}
+.imageMap .hotspots div:hover p {display:block;}
+.imageMap .hotspots div:hover a {background:#fff; z-index:100; opacity:0; filter: alpha(opacity=30); border:1px solid #000;}

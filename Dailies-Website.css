@@ -1,0 +1,163 @@
+/*
+*{
+    box-sizing: border-box;
+    position: relative;
+}
+
+*/
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row,
+.group,
+.grouped {
+    margin-top: -1em;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+
+.row::after,
+.group::after,
+.grouped::after,
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+body {
+    background-color: #FFFCDF;
+    font-family: 'PT Mono', monaco, monospace;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+body {background-color: #FFFCDF;}
+
+.container{
+  width: 100%;
+  max-width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.hide {
+    display: none;
+}
+
+@media (min-width: 50em) {
+  body {background-color: #FFFCDF;}
+  .container {
+      top: 5em;
+      width: 100%;
+      max-width: 100%;
+  }
+
+.hide {
+    display: block;
+}
+
+  .column,
+  .columns {
+      float: left;
+  }
+
+  .one       {width: calc(100% / 7 * 01);}
+  .two       {width: calc(100% / 7 * 02);}
+  .three     {width: calc(100% / 7 * 03);}
+  .four      {width: calc(100% / 7 * 04);}
+  .five      {width: calc(100% / 7 * 05);}
+  .six       {width: calc(100% / 7 * 06);}
+  .seven     {width: calc(100% / 7 * 07);}
+
+  .offset-by-one       {margin-left: calc(100%/ 7 * 01);}
+  .offset-by-two       {margin-left: calc(100%/ 7 * 02);}
+  .offset-by-three     {margin-left: calc(100%/ 7 * 03);}
+  .offset-by-four      {margin-left: calc(100%/ 7 * 04);}
+  .offset-by-five      {margin-left: calc(100%/ 7 * 05);}
+  .offset-by-six       {margin-left: calc(100%/ 7 * 06);}
+  .offset-by-seven     {margin-left: calc(100%/ 7 * 07);}
+}
+
+
+/**** Rollover related ****/
+
+.roll-over {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.image-grid img,
+.roll-over img {
+  display: block;
+}
+
+.roll-over:hover img {
+  visibility: hidden;
+}
+
+/** set each letter to the correct background **/
+.roll-over.letter-a {
+  background-image: url(a-anatomy.png);
+}
+
+.roll-over.letter-n {
+  background-image: url(n-anatomy.png);
+}
+
+.roll-over.letter-a2 {
+  background-image: url(a2-anatomy.png);
+}
+
+.roll-over.letter-t2 {
+  background-image: url(t2-anatomy.png);
+}
+
+.roll-over.letter-o {
+  background-image: url(o-anatomy.png);
+}
+
+.roll-over.letter-m {
+  background-image: url(m-anatomy.png);
+}
+
+.roll-over.letter-y {
+  background-image: url(y-anatomy.png);
+}
+
+.roll-over.letter-o2 {
+  background-image: url(o2-anatomy.png);
+}
+
+.roll-over.letter-f {
+  background-image: url(f-anatomy.png);
+}
+
+
+.roll-over.letter-t {
+  background-image: url(t-anatomy.png);
+}
+
+.roll-over.letter-y {
+  background-image: url(y-anatomy.png);
+}
+
+.roll-over.letter-p {
+  background-image: url(p-anatomy.png);
+}
+
+.roll-over.letter-e {
+  background-image: url(e-anatomy.png);
+}
+
+
+
